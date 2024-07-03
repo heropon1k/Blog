@@ -1,0 +1,22 @@
+nav{
+    text-align: right;
+    padding: 20px;
+    border-bottom: 5px solid black
+}
+
+nav a{
+    padding:10px;
+}
+
+.circle{
+    height: 800px;
+    width:800px;
+    background-color: yellow;
+    background-image: linear-gradient(rgb(99, 99, 59), rgb(182, 182, 65),rgb(221, 221, 153));
+    border-radius: 50%;
+    display: inline-block
+}
+
+.class a{
+    text-align: center;
+}
