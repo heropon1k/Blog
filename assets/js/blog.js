@@ -5,28 +5,29 @@ let stored = [];
 
 function renderBlog(){
     
-    blogitem.innerHTML='';
+    //blogitem.innerHTML='';
     
-    console.log(stored);
+    console.log(stored.length);
 
-    for (let i = 0; i < stored.legnth; i++){
+    for (let i = 0; i < stored.length; i++){
+      console.log("for loop");
+      const temp = stored[i];
+      console.log(temp);
       
-      console.log(stored);
-
       const ah = document.createElement('a');
       ah.classList.add('header');
-      ah.textContent = stored[i].title;
+      ah.textContent = temp[i].title;
 
-      console.log(ah)
+      console.log(store[i].title);
 
       const li = document.createElement('li');
-      li.textContent = stored[i].cont;
+      li.textContent = temp[i].cont;
 
       console.log(li);
 
       const af = document.createElement('a');
       af.classList.add('footer');
-      af.textContent = stored[i].name;
+      af.textContent = temp[i].name;
 
       console.log(af);
 
