@@ -44,7 +44,7 @@ input{
     display:block;
 }
 
-#msg{
+#content{
     display:block;
     min-height: 100px;
     width:100%;

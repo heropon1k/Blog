@@ -20,6 +20,8 @@ submit.addEventListener('click', function(event){
         blog.push(blogelement);
         //console.log(blogelement)
         localStorage.setItem('blog', JSON.stringify(blog));
+
+        
     
 })
 
