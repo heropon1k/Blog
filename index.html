@@ -9,36 +9,39 @@
     <title>Blog index</title>
 </head>
 
-<header>
-    <nav>
-        <a id="sun">☀️</a>
-    </nav>
-
+<body>
+    <header>
+        <nav>
+            <a id="sun">☀️</a>
+        </nav>
+    </header>
     <div>
-        <span class="circle"><a>This is my blog</a></span>
-    </div>
-</header>
-    <body>
-    <h2>What's on your mind</h2>
+        <div class="circle">
+            This is my blog
+        </div>
+        <div class="card">
+            <h2>What's on your mind</h2>
+            <form method="POST">
 
-    <form method = "POST">
-        <ul>
-            <li>
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" />
-            </li>
-            <li>
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title" />
-            </li>
-            <li>
-                <label for="content">Content</label>
-                <input type="text" name="content" id="content" />
-            </li>
-        </ul>
-        <button id="submit">Submit</button>
-    </form>
-    <script type="text/javascript" src="assets/js/form.js" ></script>
+                <ul>
+                    <li>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" />
+                    </li>
+                    <li>
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" />
+                    </li>
+                    <li>
+                        <label for="content">Content</label>
+                        <textarea id="msg" name="content"></textarea>
+                    </li>
+                </ul>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/form.js"></script>
 </body>
 
 </html>
