@@ -13,21 +13,20 @@ function renderBlog(){
       console.log("for loop");
       const temp = stored[i];
       console.log(temp);
+
       
       const ah = document.createElement('a');
       ah.classList.add('header');
-      ah.textContent = temp[i].title;
-
-      console.log(store[i].title);
+      ah.textContent = temp.title;
 
       const li = document.createElement('li');
-      li.textContent = temp[i].cont;
+      li.textContent = temp.cont;
 
       console.log(li);
 
       const af = document.createElement('a');
       af.classList.add('footer');
-      af.textContent = temp[i].name;
+      af.textContent = temp.name;
 
       console.log(af);
 

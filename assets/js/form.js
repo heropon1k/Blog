@@ -13,9 +13,13 @@ console.log(blog)
 submit.addEventListener('click', function (event) {
     event.preventDefault();
     const prev = JSON.parse(localStorage.getItem('stored'));
-    blog = prev;
+    
 
     console.log(blog)
+
+    if(prev !== null){
+        blog = prev;
+    }
 
     const blogelement = {
         name: nameInput.value.trim(),
@@ -25,7 +29,7 @@ submit.addEventListener('click', function (event) {
     }
     
 
-    console.log("submit")
+    console.log("submit");
     blog.push(blogelement);
     console.log(blog)
     localStorage.setItem('blog', JSON.stringify(blog));
