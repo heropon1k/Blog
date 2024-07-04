@@ -41,7 +41,7 @@ div{
     list-style-type: none;
   }
   
-li {
+.list {
     height: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -67,7 +67,9 @@ li {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px;
-    font-size: 1.5em;
+
+    font-size: smaller;
+    font-style: italic;
     line-height: 1.5;
     
 }

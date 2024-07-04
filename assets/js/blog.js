@@ -1,11 +1,13 @@
 const back = document.querySelector('#back');
-const blogitem = document.querySelector('#blog-item')
+const blogitem = document.querySelector('#blog-item');
+const cardbox = document.querySelector("#card-box");
+const title = document.querySelector("#head")
 
 let stored = [];
 
 function renderBlog(){
     
-    //blogitem.innerHTML='';
+   // cardbox.innerHTML='';
     
     console.log(stored.length);
 
@@ -14,25 +16,31 @@ function renderBlog(){
       const temp = stored[i];
       console.log(temp);
 
-      
+      const ul = document.createElement('ul');
+      ul.classList.add('card');
+      ul.setAttribute('id','blog-item');
+
       const ah = document.createElement('a');
       ah.classList.add('header');
       ah.textContent = temp.title;
 
       const li = document.createElement('li');
+      li.classList.add('list')
       li.textContent = temp.cont;
-
-      console.log(li);
 
       const af = document.createElement('a');
       af.classList.add('footer');
       af.textContent = temp.name;
+      
+      cardbox.append(ul);
+      ul.appendChild(ah);
+      ul.appendChild(li);
+  
+      ul.appendChild(af);
+      
+      
 
-      console.log(af);
 
-      blogitem.appendChild(ah);
-      blogitem.appendChild(li);
-      blogitem.appendChild(af);
       
     }
 
