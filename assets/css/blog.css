@@ -16,9 +16,7 @@ nav {
     width:200px;
 }
 
-nav a{
-    align-content: center;
-}
+
 
 div{
     display:flex;
@@ -53,9 +51,11 @@ li {
     height: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding: 5px;
+    padding-left: 5px;
     font-size: 1.5em;
     line-height: 1.5;  
+    display:block;
+    border-bottom: 2px solid black;
     
 }
 .footer{
