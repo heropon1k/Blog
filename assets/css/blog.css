@@ -16,6 +16,10 @@ nav {
     width:200px;
 }
 
+nav a{
+    padding:10px;
+    align-content: center;
+}
 
 
 div{
