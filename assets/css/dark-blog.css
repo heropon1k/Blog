@@ -2,13 +2,15 @@
 .dark {
     * {
         font-family: sans-serif;
-    }    
+        background-color: black;
+        color:#fff;
+    }
 
     header {
         display: flex;
         justify-content: space-between;
         padding: 20px;
-        border-bottom: 5px solid black
+        border-bottom: 5px solid white
     }
 
     nav {
@@ -34,7 +36,7 @@
     .card {
         list-style-type: none;
         padding: 0;
-        border: 5px solid black;
+        border: 5px solid white;
 
 
     }
@@ -61,7 +63,7 @@
         font-size: 1.5em;
         line-height: 1.5;
         display: block;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
 
     }
 
@@ -94,16 +96,6 @@
 
         float: right;
     }
-    
-    #sun{
-        visibility: hidden;
-        position:relative;
-    }
 
-    #sun::after{
-        visibility:visible;
-        position:absolute;
-        content:"🌙"
-    }
 
 }

@@ -2,7 +2,7 @@ const submit = document.querySelector('#submit');
 const nameInput = document.querySelector('#username');
 const titlecont = document.querySelector('#title');
 const content = document.querySelector('#content');
-const mode = document.querySelector('#sun')
+
 
 
 console.log(nameInput);
@@ -45,10 +45,6 @@ submit.addEventListener('click', function (event) {
  
 
 
-})
-
-
-mode.addEventListener('click', function (event) {
-    event.preventDefault();
-
 });
+
+

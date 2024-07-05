@@ -95,14 +95,4 @@
         float: right;
     }
     
-    #sun{
-        visibility: hidden;
-        position:relative;
-    }
-
-    #sun::after{
-        visibility:visible;
-        position:absolute;
-        content:"🌙"
-    }
 }
