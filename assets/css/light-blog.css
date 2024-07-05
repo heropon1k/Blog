@@ -44,12 +44,13 @@
     }
 
     .list {
-        height: 50px;
+        height: 100%;
         margin-top: 5px;
         margin-bottom: 5px;
         padding: 5px;
         font-size: 20px;
         line-height: 1.5;
+        overflow-wrap:normal;
 
     }
 
@@ -91,8 +92,15 @@
         transition-duration: 0.15s;
         transition-property: background-color;
         transition-timing-function: linear;
-
         float: right;
     }
     
+    footer{
+        text-align:center;
+    }
+
+    #sun:hover{
+        cursor: pointer;
+    }
+
 }

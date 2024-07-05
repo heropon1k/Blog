@@ -30,7 +30,7 @@ function renderBlog(){
 
       const af = document.createElement('a');
       af.classList.add('footer');
-      af.textContent = temp.name;
+      af.textContent = "posted by: "+temp.name;
       
       cardbox.append(ul);
       ul.appendChild(ah);
