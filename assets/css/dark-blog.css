@@ -1,14 +1,16 @@
-html, body{
-    margin:0px;
-    padding:0px;
-
-}
 
 .dark {
+    background-color: black;
     * {
         font-family: sans-serif;
         background-color: black;
         color:#fff;
+    }
+    body{
+
+        height:100% ;
+        margin:0px;
+        padding:0px;
     }
 
     header {
