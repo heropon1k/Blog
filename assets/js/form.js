@@ -3,24 +3,19 @@ const nameInput = document.querySelector('#username');
 const titlecont = document.querySelector('#title');
 const content = document.querySelector('#content');
 
-
-
-console.log(nameInput);
-
+//Create variable blog to get previously stored blog posts
 let blog = [];
-console.log(blog)
 
 submit.addEventListener('click', function (event) {
     event.preventDefault();
-    const prev = JSON.parse(localStorage.getItem('stored'));
-    
+  
+    //Checking if previous data is empty
+    if(blog !== null){
+        blog = JSON.parse(localStorage.getItem('blog'));
 
-    console.log(blog)
-
-    if(prev !== null){
-        blog = prev;
     }
 
+    //getting data from input
     const blogelement = {
         name: nameInput.value.trim(),
         title: titlecont.value.trim(),
@@ -28,6 +23,7 @@ submit.addEventListener('click', function (event) {
 
     }
     
+    //checking if data is empty
     if (blogelement.name == "" ) {
         alert("Please fill out the form");
     } else if (blogelement.title == "") {
@@ -35,10 +31,14 @@ submit.addEventListener('click', function (event) {
     } else if (blogelement.cont == "" ) {
         alert("Please fill out the form");
     } else { 
-        console.log("submit");
+
+        //console.log("submit");
+        //push input into blog array
         blog.push(blogelement);
-        console.log(blog)
+        //console.log(blog)
+        //Store data into blog
         localStorage.setItem('blog', JSON.stringify(blog));
+        //link to blog.html
         window.location.href='blog.html';
     }
 
