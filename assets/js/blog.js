@@ -35,12 +35,7 @@ function renderBlog(){
       cardbox.append(ul);
       ul.appendChild(ah);
       ul.appendChild(li);
-  
       ul.appendChild(af);
-      
-      
-
-
       
     }
 

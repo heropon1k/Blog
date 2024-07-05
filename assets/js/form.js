@@ -28,12 +28,21 @@ submit.addEventListener('click', function (event) {
 
     }
     
+    if (blogelement.name == "" ) {
+        alert("Please fill out the form");
+    } else if (blogelement.title == "") {
+        alert("Please fill out the form");
+    } else if (blogelement.cont == "" ) {
+        alert("Please fill out the form");
+    } else { 
+        console.log("submit");
+        blog.push(blogelement);
+        console.log(blog)
+        localStorage.setItem('blog', JSON.stringify(blog));
+        window.location.href='blog.html';
+    }
 
-    console.log("submit");
-    blog.push(blogelement);
-    console.log(blog)
-    localStorage.setItem('blog', JSON.stringify(blog));
-    window.location.href='blog.html';
+ 
 
 
 })
