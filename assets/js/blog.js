@@ -62,9 +62,9 @@ function init(){
   const storedblog = JSON.parse(localStorage.getItem('blog'));
 
   //Store localstorage into variable stored if storedblog is not empty
-  //if(storedblog !== null){
-    //stored = storedblog;
-  //}
+  if(storedblog !== null){
+    stored = storedblog;
+  }
   
   console.log(stored);
 
