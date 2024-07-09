@@ -9,10 +9,12 @@ let animals = [];
 
 submit.addEventListener('click', function (event) {
     event.preventDefault();
-  
+    //console.log(blog.length);
+    temp=JSON.parse(localStorage.getItem('blog'));
     //Checking if previous data is empty
-    if(blog.length !== 0){
-        blog = JSON.parse(localStorage.getItem('blog'));
+    if(temp !== null){
+        blog = temp;
+        console.log("ran");
 
     }
 
