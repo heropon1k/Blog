@@ -5,12 +5,13 @@ const content = document.querySelector('#content');
 
 //Create variable blog to get previously stored blog posts
 let blog = [];
+let animals = [];
 
 submit.addEventListener('click', function (event) {
     event.preventDefault();
   
     //Checking if previous data is empty
-    if(blog !== null){
+    if(blog == null){
         blog = JSON.parse(localStorage.getItem('blog'));
 
     }
@@ -34,17 +35,21 @@ submit.addEventListener('click', function (event) {
 
         //console.log("submit");
         //push input into blog array
+        
         blog.push(blogelement);
         //console.log(blog)
         //Store data into blog
         localStorage.setItem('blog', JSON.stringify(blog));
         //link to blog.html
         window.location.href='blog.html';
+        
+
+    
+    
     }
+    
 
- 
-
-
+  
 });
 
 
