@@ -11,7 +11,7 @@ submit.addEventListener('click', function (event) {
     event.preventDefault();
   
     //Checking if previous data is empty
-    if(blog == null){
+    if(blog.length !== 0){
         blog = JSON.parse(localStorage.getItem('blog'));
 
     }
